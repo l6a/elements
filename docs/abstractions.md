@@ -28,10 +28,20 @@ random number seed so its results are different but statistically
 consistent with each other.
 We define this as "partial-derivable" and the results are correlated.
 
-Note that "absolute derivable" does not imply correctness.
+Note that absolute derivable does not imply correctness.
 If the upstream data is wrong, or there is a serious bug in the data
 processing algorithm, the result is obviously wrong.
-Nevertheless, even when the result is wrong, "absolute derivable" can
+Nevertheless, even when the result is wrong, absolute derivable can
 help track mistakes and hence make correction possible.
-Therefore, "absolute derivable" should be a goal in a scientific
+Therefore, absolute derivable should be a goal in a scientific
 process.
+
+To reach absolute derivable in the final results, we simply track all
+inputs of the data processing and version control anything that is not
+absolute derivable.
+Intermedia data products that are absolute derivable do not needed to
+version controlled, but may be cached to speed up data processing,
+reviews, and inspection.
+In this sense, depending on the compilers and programming languages
+used, software binaries or envirnments may needed to be version
+controlled "data" themselves.
