@@ -3,7 +3,5 @@
 
 format: jb-book
 root: index
-parts:
-- caption: Abstractions
-  chapters:
-  - file: derivability
+chapters:
+- file: derivability
