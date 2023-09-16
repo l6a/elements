@@ -1,6 +1,4 @@
-# Abstractions
-
-## Derivability of Data
+# Derivability of Data
 
 Derivability is the degree of something can be calculated or obtained
 from something else.
