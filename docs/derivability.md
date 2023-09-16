@@ -38,8 +38,19 @@ To reach absolute derivable in the final results, we simply track all
 inputs of the data processing and version control anything that is not
 absolute derivable.
 Intermedia data products that are absolute derivable do not needed to
-version controlled, but may be cached to speed up data processing,
-reviews, and inspection.
+be version controlled, but may be cached to speed up data processing,
+reviews, and inspections.
 In this sense, depending on the compilers and programming languages
 used, software binaries or envirnments may needed to be version
 controlled "data" themselves.
+
+Consider the following flowchat:
+```
+Archival Data -+
+               +- Data ----+
+New Data ------+           |           +- Plots --+
+                           +- Results -+          +- Scientific Paper
+Simulation -+              |           +- Tables -+
+            +- Model Data -+
+Theory -----+
+```
