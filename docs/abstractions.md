@@ -27,3 +27,11 @@ It is possible that a piece of software uses the system clock as its
 random number seed so its results are different but statistically
 consistent with each other.
 We define this as "partial-derivable" and the results are correlated.
+
+Note that "absolute derivable" does not imply correctness.
+If the upstream data is wrong, or there is a serious bug in the data
+processing algorithm, the result is obviously wrong.
+Nevertheless, even when the result is wrong, "absolute derivable" can
+help track mistakes and hence make correction possible.
+Therefore, "absolute derivable" should be a goal in a scientific
+process.
