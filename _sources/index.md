@@ -1,11 +1,8 @@
-# The Elements of Reproducible Science
+# Introduction
 
 Reproducibility is the hallmark of the scientific method.
-This is a [Jupyter Book](https://jupyterbook.org/) for different
-abstractions needed for reproducible science.
+And data serves as the assay that enables reproducibility.
 
-Data collection has always been an important aspect of the scientific
-method.
 In modern science, however, data collection is not just about
 performing measurements some numbers in a lab.
 It may include gather noisy data using many sensors across the glob.

@@ -1,6 +1,4 @@
-# Abstractions
-
-## Derivability of Data
+# Derivability of Data
 
 Derivability is the degree of something can be calculated or obtained
 from something else.
@@ -45,3 +43,13 @@ reviews, and inspection.
 In this sense, depending on the compilers and programming languages
 used, software binaries or envirnments may needed to be version
 controlled "data" themselves.
+
+```
+Historical Data -+
+                 +- Data --+
+New Data --------+         |           +- Plots --+
+                           +- Summary -+          +- Scientific Paper
+Simulation -+              |           +- Tables -+
+            +- Model Data -+
+Theory -----+
+```
