@@ -44,13 +44,42 @@ In this sense, depending on the compilers and programming languages
 used, software binaries or envirnments may needed to be version
 controlled "data" themselves.
 
-Consider the following flowchat:
+Consider the standard 8 steps in data life cycle:
+
+* Generation
+
+* Collection
+
+* Processing
+
+* Storage
+
+* Management
+
+* Analysis
+
+* Visualization
+
+* Interpretation
+
+and the following sample flowchat:
 ```
-Archival Data -+
-               +- Data ----+
-New Data ------+           |           +- Plots --+
-                           +- Results -+          +- Scientific Paper
-Simulation -+              |           +- Tables -+
-            +- Model Data -+
-Theory -----+
+    Data Manager/Merger/Filter
+                |
+                |  Data Processing
+                |      Pipeline
+[Archival Data]-+         |       Visualization
+                +-[Data]--+-+           |
+[New Data]------+           |           +-[Plots]--+
+                            +-[Results]-+          +-[Scientific Paper]
+[Simulation]-+              |           +-[Tables]-+
+             +-[Model Data]-+
+[Theory]-----+              |
+                        Inference/
+                     Model Comparison
 ```
+The items within square brackets `[...]` are traditionally considered
+data and items without square brackets are usually handled by
+software.
+Nevertheless, in order to ensure absolute derivable, all these
+software should be treated as data.

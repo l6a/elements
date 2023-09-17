@@ -420,16 +420,38 @@ reviews, and inspections.
 In this sense, depending on the compilers and programming languages
 used, software binaries or envirnments may needed to be version
 controlled “data” themselves.</p>
-<p>Consider the following flowchat:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Archival</span> <span class="n">Data</span> <span class="o">-+</span>
-               <span class="o">+-</span> <span class="n">Data</span> <span class="o">----+</span>
-<span class="n">New</span> <span class="n">Data</span> <span class="o">------+</span>           <span class="o">|</span>           <span class="o">+-</span> <span class="n">Plots</span> <span class="o">--+</span>
-                           <span class="o">+-</span> <span class="n">Results</span> <span class="o">-+</span>          <span class="o">+-</span> <span class="n">Scientific</span> <span class="n">Paper</span>
-<span class="n">Simulation</span> <span class="o">-+</span>              <span class="o">|</span>           <span class="o">+-</span> <span class="n">Tables</span> <span class="o">-+</span>
-            <span class="o">+-</span> <span class="n">Model</span> <span class="n">Data</span> <span class="o">-+</span>
-<span class="n">Theory</span> <span class="o">-----+</span>
+<p>Consider the standard 8 steps in data life cycle:</p>
+<ul class="simple">
+<li><p>Generation</p></li>
+<li><p>Collection</p></li>
+<li><p>Processing</p></li>
+<li><p>Storage</p></li>
+<li><p>Management</p></li>
+<li><p>Analysis</p></li>
+<li><p>Visualization</p></li>
+<li><p>Interpretation</p></li>
+</ul>
+<p>and the following sample flowchat:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">Data</span> <span class="n">Manager</span><span class="o">/</span><span class="n">Merger</span><span class="o">/</span><span class="n">Filter</span>
+                <span class="o">|</span>
+                <span class="o">|</span>  <span class="n">Data</span> <span class="n">Processing</span>
+                <span class="o">|</span>      <span class="n">Pipeline</span>
+<span class="p">[</span><span class="n">Archival</span> <span class="n">Data</span><span class="p">]</span><span class="o">-+</span>         <span class="o">|</span>       <span class="n">Visualization</span>
+                <span class="o">+-</span><span class="p">[</span><span class="n">Data</span><span class="p">]</span><span class="o">--+-+</span>           <span class="o">|</span>
+<span class="p">[</span><span class="n">New</span> <span class="n">Data</span><span class="p">]</span><span class="o">------+</span>           <span class="o">|</span>           <span class="o">+-</span><span class="p">[</span><span class="n">Plots</span><span class="p">]</span><span class="o">--+</span>
+                            <span class="o">+-</span><span class="p">[</span><span class="n">Results</span><span class="p">]</span><span class="o">-+</span>          <span class="o">+-</span><span class="p">[</span><span class="n">Scientific</span> <span class="n">Paper</span><span class="p">]</span>
+<span class="p">[</span><span class="n">Simulation</span><span class="p">]</span><span class="o">-+</span>              <span class="o">|</span>           <span class="o">+-</span><span class="p">[</span><span class="n">Tables</span><span class="p">]</span><span class="o">-+</span>
+             <span class="o">+-</span><span class="p">[</span><span class="n">Model</span> <span class="n">Data</span><span class="p">]</span><span class="o">-+</span>
+<span class="p">[</span><span class="n">Theory</span><span class="p">]</span><span class="o">-----+</span>              <span class="o">|</span>
+                        <span class="n">Inference</span><span class="o">/</span>
+                     <span class="n">Model</span> <span class="n">Comparison</span>
 </pre></div>
 </div>
+<p>The items within square brackets <code class="docutils literal notranslate"><span class="pre">[...]</span></code> are traditionally considered
+data and items without square brackets are usually handled by
+software.
+Nevertheless, in order to ensure absolute derivable, all these
+software should be treated as data.</p>
 </section>
 
     <script type="text/x-thebe-config">
